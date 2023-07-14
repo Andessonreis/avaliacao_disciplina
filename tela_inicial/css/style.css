@@ -1,0 +1,53 @@
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #303135;
+    padding: 7px;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.buscar {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 800px;
+    margin-left: auto; 
+}
+
+.buscar input[type="text"] {
+    padding: 4px;
+    width: 600px; 
+}
+
+
+.info-perfil {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+
