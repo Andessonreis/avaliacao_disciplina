@@ -65,12 +65,20 @@ body {
     color: #888888;
 }
 
+
+.notification {
+    position: relative;
+    top: 44px;
+    right: 40px;
+    transform: translateY(-50%);
+}
+
+
 .notification-icon {
     position: relative;
     top: 0;
     right: 0;
 }
-
 
 .notification-icon::before {
     content: '';
@@ -89,6 +97,7 @@ body {
     margin-right: 10px;
     margin-left: auto;
 }
+
 
 .avatar {
     width: 46px;
