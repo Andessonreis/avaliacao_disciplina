@@ -14,19 +14,9 @@ body {
     align-items: center;
     background-color: #ffffff;
     padding: 7px;
+    margin-left: 234px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.logo h1 {
-    color: black;
-    font-size: 24px;
-    margin: 0;
-}
 
 .search-bar {
     display: flex;
@@ -110,6 +100,11 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    transition: transform 0.4s;
+}
+
+.avatar:hover {
+    transform: scale(1.5);
 }
 
 .professor-details {
@@ -126,4 +121,63 @@ body {
 .professor-role {
     font-size: 12px;
     color: #888888;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid #BBB9B9;
+    background: #373A4E;
+}
+
+
+.logo {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    margin-bottom: 4px;
+}
+
+.logo h1 {
+    color: black;
+    font-size: 34px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.nav-item i {
+    margin-right: 10px;
+}
+
+.nav-text {
+    font-size: 16px;
+}
+
+.content {
+    margin-left: 234px;
 }
