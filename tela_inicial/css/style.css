@@ -126,6 +126,16 @@ body {
     margin-left: 5px;
 }
 
+.logo-ifba-branca-1-icon {
+    position: absolute;
+    top: 28.17px;
+    left: 33px;
+    width: 37px;
+    height: 57.47px;
+    object-fit: cover;
+}
+
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -141,20 +151,21 @@ body {
     background: #373A4E;
 }
 
-.logo-ifba-branca-1-icon {
-    position: absolute;
-    top: 28.17px;
-    left: 33px;
-    width: 37px;
-    height: 57.47px;
-    object-fit: cover;
+.separator {
+    background-color: var(--color-gainsboro-300);
+    border-top: 1px solid var(--color-darkslategray-100);
+    box-sizing: border-box;
+    width: 210px;
+    height: 1px;
+    margin-bottom: 10px;
 }
+
 
 .nav-list {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    padding-left: 20px;
+    margin-top: 130px;
+    padding-left: 30px;
 }
 
 .nav-item {
