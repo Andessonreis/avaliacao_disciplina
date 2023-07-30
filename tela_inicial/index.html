@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,700;1,300;1,400;1,600&display=swap" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/global.css" />
     <script src="js/script.js"></script>
@@ -18,42 +16,43 @@
     <header>
         <div class="container">
 
+            <!--SideBar-->
             <div class="sidebar">
-
                 <div class="logo">
                     <img class="logo-ifba-branca-1-icon" alt="" src="./img/logo-ifba-branca-1@2x.png" />
                 </div>
 
-                <div class="nav-list">
+                <div class="menu-group">
+                    <ul class="side-menu">
+                        <div class="separator"></div>
+                        <li><a href="#"><i class='bx bx-home-alt'></i>Home</a></li>
 
-                    <div class="separator"></div>
-                    <a href="#" class="nav-item">
-                        <img class="vector-home-icon" alt="" src="./img/vector-home.svg" />
-                        <span class="nav-text">Home</span>
-                    </a>
-                    <div class="separator"></div>
+                        <div class="separator"></div>
+                        <li><a href="#"><i class='bx bx-user'></i>Perfil</a></li>
 
-                    <a href="#" class="nav-item">
-                        <img class="group-user-icon" alt="" src="./img/group-user.svg" />
-                        <span class="nav-text">Perfil</span>
-                    </a>
-                    <div class="separator"></div>
+                        <div class="separator"></div>
+                        <li class="active"><a href="#"><i class='bx bx-game'></i>Avaliação disciplina</a></li>
 
-                    <a href="#" class="nav-item">
-                        <img class="group-icon1" alt="" src="./img/group1.svg" />
-                        <span class="nav-text">Avaliação disciplina</span>
-                    </a>
-                    <div class="separator"></div>
+                        <div class="separator"></div>
+                        <li><a href="#"><i class='bx bx-cog'></i>Configuração</a></li>
+                    </ul>
 
-                    <a href="#" class="nav-item">
-                        <img class="group-config-icon" alt="" src="./img/group-config.svg" />
-                        <span class="nav-text">Configuração</span>
-                    </a>
-                    <div class="separator"></div>
+                    <ul class="side-menu">
+                        <div class="separator"></div>
+                        <li>
+                            <a href="#" class="logout">
+                                <i class='bx bx-log-out'></i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
+            <!--End of sidebar -->
 
+
+        
+            <!--           
             <nav class="nav-bar">
 
                 <div class="search-bar">
@@ -80,23 +79,40 @@
                     <img class="vector-icon" alt="" src="./img/vector.svg">
                 </div>
             </nav>
+        -->
+            <!--End of NavBar -->
         </div>
     </header>
 
+
+
+    <!-- Main content -->
     <div class="content">
-        <section class="main-content">
-            <div class="info-da-aba-child">
-                <span class="avaliacao-da-disciplina">Avaliação da Disciplina</span>
-                <img class="vector-icon1" alt="" src="./img/vector-icon1.png">
-            </div>
-            <div class="other-elements">
-                <!-- Add other elements here -->
-                <p>This is an example of the content you can add to the main section.</p>
-                <!-- Add more content as needed -->
-            </div>
-        </section>
+
+          <!--NavBar-->
+          <nav>
+            <i class="bx bx-menu"></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="research discipline">
+                    <button class="search-btn" type="submit"><i class="bx bx-search"></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#">
+                <i class="bx bx-bell"></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile"></a>
+            <img src="img/profile.png">
+        </nav>
+        <!--End of NavBar -->
+
+
+
     </div>
-    
+    <script src="index.js"></script>
 </body>
 
 </html>
