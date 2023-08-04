@@ -14,102 +14,83 @@
 
 <body>
     <header>
-        <div class="container">
-
-            <!--SideBar-->
-            <div class="sidebar">
-                <div class="logo">
-                    <img class="logo-ifba-branca-1-icon" alt="" src="./img/logo-ifba-branca-1@2x.png" />
-                </div>
-
-                <div class="menu-group">
-                    <ul class="side-menu">
-                        <div class="separator"></div>
-                        <li><a href="#"><i class='bx bx-home-alt'></i>Home</a></li>
-
-                        <div class="separator"></div>
-                        <li><a href="#"><i class='bx bx-user'></i>Perfil</a></li>
-
-                        <div class="separator"></div>
-                        <li class="active"><a href="#"><i class='bx bx-game'></i>Avaliação disciplina</a></li>
-
-                        <div class="separator"></div>
-                        <li><a href="#"><i class='bx bx-cog'></i>Configuração</a></li>
-                    </ul>
-
-                    <ul class="side-menu">
-                        <div class="separator"></div>
-                        <li>
-                            <a href="#" class="logout">
-                                <i class='bx bx-log-out'></i>
-                                Logout
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <!--SideBar-->
+        <div class="sidebar ">
+            <div class="logo">
+                <img class="logo-ifba-branca-1-icon" alt="" src="./img/logo-ifba-branca-1@2x.png" />
             </div>
-            <!--End of sidebar -->
 
+            <div class="menu-group">
+                <ul class="side-menu">
+                    <div class="separator"></div>
+                    <li><a href="#"><i class='bx bx-home-alt'></i>Home</a></li>
 
-        
-            <!--           
-            <nav class="nav-bar">
+                    <div class="separator"></div>
+                    <li><a href="#"><i class='bx bx-user'></i>Perfil</a></li>
 
-                <div class="search-bar">
-                    <input type="text" placeholder="Pesquisar">
-                    <button type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
+                    <div class="separator"></div>
+                    <li class="active"><a href="#"><i class='bx bx-game'></i>Avaliação disciplina</a></li>
 
-                <div class="notification">
-                    <span class="notification-icon"><i class="fas fa-bell"></i></span>
-                </div>
+                    <div class="separator"></div>
+                    <li><a href="#"><i class='bx bx-cog'></i>Configuração</a></li>
+                </ul>
 
-                <div class="info-perfil">
-                    <div class="avatar">
-                        <img class="icon" src="img/profile.png">
-                    </div>
-
-                    <div class="professor-details">
-                        <span class="professor-name">Eduardo Sousa</span>
-                        <span class="professor-role">Professor</span>
-                    </div>
-
-                    <img class="vector-icon" alt="" src="./img/vector.svg">
-                </div>
-            </nav>
-        -->
-            <!--End of NavBar -->
+                <ul class="side-menu">
+                    <div class="separator"></div>
+                    <li>
+                        <a href="#" class="logout">
+                            <i class='bx bx-log-out'></i>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
-
-
+    <!--End of sidebar -->
 
     <!-- Main content -->
     <div class="content">
 
-          <!--NavBar-->
-          <nav>
+        <!--NavBar-->
+        <nav>
             <i class="bx bx-menu"></i>
             <form action="#">
                 <div class="form-input">
-                    <input type="search" placeholder="research discipline">
+                    <input type="search" placeholder="Pesquisar disciplina">
                     <button class="search-btn" type="submit"><i class="bx bx-search"></i></button>
                 </div>
             </form>
+
             <input type="checkbox" id="theme-toggle" hidden>
             <label for="theme-toggle" class="theme-toggle"></label>
-            <a href="#">
+            <a href="#" class="notif">
                 <i class="bx bx-bell"></i>
                 <span class="count">12</span>
             </a>
-            <a href="#" class="profile"></a>
-            <img src="img/profile.png">
+
+            <a href="#" class="profile">
+                <img src="img/profile.png" alt="Profile Image">
+            </a>
+
+
+            <!-- Professor Details -->
+            <div class="professor-details">
+                <span class="professor-name">Eduardo Sousa</span>
+                <span class="professor-role">Professor</span>
+            </div>
+
+
         </nav>
         <!--End of NavBar -->
 
-
+        <main class="main-content">
+            <div class="header">
+                <div class="left">
+                    <h1>Avaliação Disciplina</h1>
+                </div>
+            </div>
+        </main>
 
     </div>
     <script src="index.js"></script>
