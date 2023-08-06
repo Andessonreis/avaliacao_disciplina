@@ -56,14 +56,18 @@
         <nav>
             <i class="bx bx-menu"></i>
             <form action="#">
+
                 <div class="form-input">
                     <input type="search" placeholder="Pesquisar disciplina">
                     <button class="search-btn" type="submit"><i class="bx bx-search"></i></button>
                 </div>
+
             </form>
 
-            <input type="checkbox" id="theme-toggle" hidden>
-            <label for="theme-toggle" class="theme-toggle"></label>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="bx bx-moon"></i>
+            </button>
+
             <a href="#" class="notif">
                 <i class="bx bx-bell"></i>
                 <span class="count">12</span>
@@ -72,7 +76,6 @@
             <a href="#" class="profile">
                 <img src="img/profile.png" alt="Profile Image">
             </a>
-
 
             <!-- Professor Details -->
             <div class="professor-details">
@@ -90,7 +93,72 @@
                     <h1>Avaliação Disciplina</h1>
                 </div>
             </div>
+
+            <!-- Seção "Esperando" -->
+            <div class="section">
+                <h2 class="section-title">Esperando</h2>
+                <div class="cards-container">
+                    
+                    <!-- Card de disciplina -->
+                    <div class="card waiting-card">
+                        <div class="status-bar waiting-bar"></div>
+                        <i class="bx bx-time"></i>
+                        <h3 class="subject-title">Matemática</h3>
+                        <p class="subject-info">Curso: Informática</p>
+                        <p class="subject-info">Turma: 2° A</p>
+                        <p class="subject-info">Dia: 23/07/2023</p>
+                    </div>
+
+                    <!-- Card de disciplina -->
+                    <div class="card waiting-card">
+                        <div class="status-bar waiting-bar"></div>
+                        <i class="bx bx-time"></i>
+                        <h3 class="subject-title">Biologia</h3>
+                        <p class="subject-info">Curso: Informática</p>
+                        <p class="subject-info">Turma: 2° A</p>
+                        <p class="subject-info">Dia: 05/08/2023</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Seção "Em progresso" -->
+            <div class="section">
+                <h2 class="section-title">Em progresso</h2>
+                <div class="cards-container">
+
+                    <!-- Card de disciplina -->
+                    <div class="card in-progress-card">
+                        <div class="status-bar in-progress-bar"></div>
+                        <i class="bx bx-hourglass"></i>
+                        <h3 class="subject-title">História</h3>
+                        <p class="subject-info">Curso: Informática</p>
+                        <p class="subject-info">Turma: 2° A</p>
+                        <p class="subject-info">Dia: 28/07/2023</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Seção "Concluído" -->
+            <div class="section">
+                <h2 class="section-title">Concluído</h2>
+                <div class="cards-container">
+
+                    <!-- Card de disciplina -->
+                    <div class="card completed-card">
+                        <div class="status-bar completed-bar"></div>
+                        <i class="bx bx-check"></i>
+                        <h3 class="subject-title">Geografia</h3>
+                        <p class="subject-info">Curso: Informática</p>
+                        <p class="subject-info">Turma: 2° A</p>
+                        <p class="subject-info">Dia: 30/07/2023</p>
+                    </div>
+                  
+                </div>
+            </div>
         </main>
+
 
     </div>
     <script src="index.js"></script>
