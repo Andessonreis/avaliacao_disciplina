@@ -21,9 +21,6 @@ li {
 
 }
 
-html {
-    overflow: hidden;
-}
 
 body.dark {
     --light: #181a1e;
@@ -206,6 +203,14 @@ body {
     .content {
         max-width: calc(100% - 60px);
         left: 60px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
     }
 }
 
@@ -405,6 +410,7 @@ body {
 /* Main*/
 .main-content {
     font-family: Arial, sans-serif;
+    overflow-y: auto;
 }
 
 .header {
@@ -429,18 +435,22 @@ body {
     color: rgba(0, 0, 0, 0.40);
 }
 
+
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
+  
 }
+
 
 .card {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     width: 170px;
-    height: 151px;
+    /* Ajuste a altura conforme necessário */
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
