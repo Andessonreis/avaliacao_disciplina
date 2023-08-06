@@ -94,11 +94,17 @@
                 </div>
             </div>
 
+            <div class="tabs">
+                <button class="tab active" onclick="changeSection('esperando')">Esperando</button>
+                <button class="tab" onclick="changeSection('progresso')">Em progresso</button>
+                <button class="tab" onclick="changeSection('concluido')">Concluído</button>
+            </div>
+
             <!-- Seção "Esperando" -->
             <div class="section">
                 <h2 class="section-title">Esperando</h2>
                 <div class="cards-container">
-                    
+
                     <!-- Card de disciplina -->
                     <div class="card waiting-card">
                         <div class="status-bar waiting-bar"></div>
@@ -136,7 +142,7 @@
                         <p class="subject-info">Turma: 2° A</p>
                         <p class="subject-info">Dia: 28/07/2023</p>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -144,7 +150,7 @@
             <div class="section">
                 <h2 class="section-title">Concluído</h2>
                 <div class="cards-container">
-                    
+
                     <!-- Card de disciplina -->
                     <div class="card completed-card">
                         <div class="status-bar completed-bar"></div>
@@ -154,14 +160,14 @@
                         <p class="subject-info">Turma: 2° A</p>
                         <p class="subject-info">Dia: 30/07/2023</p>
                     </div>
-                  
+
                 </div>
             </div>
         </main>
 
 
     </div>
-    <script src="index.js"></script>
+    <script src="js/index.ts"></script>
 </body>
 
 </html>
